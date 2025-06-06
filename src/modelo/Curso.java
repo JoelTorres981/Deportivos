@@ -17,6 +17,30 @@ public class Curso {
         this.inscritos = new ArrayList<>();
     }
 
+    public String getNombre() {
+        return nombre;
+    }
+
+    public String getDisciplina() {
+        return disciplina;
+    }
+
+    public String getHorario() {
+        return horario;
+    }
+
+    public int getEdadMin() {
+        return edadMin;
+    }
+
+    public int getEdadMax() {
+        return edadMax;
+    }
+
+    public Entrenador getEntrenador() {
+        return entrenador;
+    }
+
     public boolean inscribir(Participante p){
         if (inscritos.size() < 30 && p.getEdad() >= edadMin && p.getEdad() <= edadMax){
             inscritos.add(p);
